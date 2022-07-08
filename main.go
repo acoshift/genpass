@@ -2,6 +2,7 @@ package main
 
 import (
 	"crypto/rand"
+	"fmt"
 	"os"
 	"strconv"
 )
@@ -23,5 +24,5 @@ func main() {
 		rand.Read(b)
 		s += string(char[int(b[0])%len(char)])
 	}
-	print(s)
+	fmt.Print(s)
 }
